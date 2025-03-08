@@ -1,0 +1,157 @@
+/* Este css es para darle diseño a la pagina web de entrada al portafolio y para haceresa seccion responsive */
+
+/* Importa la fuente 'Poppins' desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,900&display=swap');
+
+/* Estilos generales para todos los elementos */
+*{
+    font-family: 'Poppins',cursive;
+}
+
+/* Estilos para el cuerpo de la página */
+body{
+    color: azure; /* Texto en color azul claro */
+    width: 100%; 
+    height: 82vh; /* Ocupar el 82% de la altura del viewport */
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    background-color: #86b1c9; 
+    overflow: hidden; /* Ocultar cualquier contenido que sobresalga */
+}
+
+/* Estilos para los botones */
+.botones{
+    padding: 9px; 
+    border-radius: 80px;
+    background-color: transparent;
+    border: none;
+}
+
+/* Estilos para los enlaces dentro de los botones */
+.botones a{
+    background-color: #0a2be9;
+    padding: 9px;
+    border-radius: 80px;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    -ms-border-radius: 80px;
+    -o-border-radius: 80px;
+
+}
+
+.botones a:focus{
+    background-color: rgb(50, 194, 194);
+}
+
+.titulo{
+    font-size: 7rem;
+    font-weight: 900;
+}
+
+/* Se usa > para indicar que es un hijo directo */
+.titulo > span{
+    animation: glow 2.5s ease-in-out infinite;
+}
+@keyframes glow{
+    0%, 100%{
+        color: #fff;
+        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+    }
+    10%, 90%{
+        color: #111;
+        text-shadow: none;
+    }
+}
+
+/* Animacion para cada letra del titulo */
+.titulo > span:nth-child(2){
+    animation-delay: .3s ;
+}
+.titulo > span:nth-child(3){
+    animation-delay: .6s ;
+}
+.titulo > span:nth-child(4){
+    animation-delay: .9s;
+}
+.titulo > span:nth-child(5){
+    animation-delay: 1.2s;
+}
+.titulo > span:nth-child(6){
+    animation-delay: 1.5s;
+}
+.titulo > span:nth-child(7){
+    animation-delay: 1.8s;
+}
+.titulo > span:nth-child(8){
+    animation-delay: 2.1s;
+}
+.titulo > span:nth-child(9){
+    animation-delay: 2.4s;
+}
+.titulo > span:nth-child(10){
+    animation-delay: 2.7s;
+}
+
+.descripcion{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.button a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: #111;
+}
+
+/* Hace la página web responsive */
+
+
+@media screen and (max-width:1000px){
+    .titulo{
+        display: block;
+        font-size: 4rem;
+        font-weight: 800;
+        text-align: center;
+    }
+    .descripcion{
+        font-size: 2rem;
+    }
+    
+    .button a{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:600px){
+    .titulo{
+        display: block;
+        font-size: 3rem;
+        font-weight: 800;
+        text-align: center;
+    }
+    .descripcion{
+        font-size: 1.5rem;
+    }
+    
+    .button a{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:430px){
+    .titulo{
+        display: block;
+        font-size: 2rem;
+        font-weight: 800;
+        text-align: center;
+    }
+    .descripcion{
+        font-size: 1rem;
+    }
+    
+    .button a{
+        font-size: 1rem;
+    }
+}

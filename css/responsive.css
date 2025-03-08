@@ -1,0 +1,158 @@
+/* Media Queries para tamaños de pantalla diferentes */
+@media screen and (max-width: 600px) {
+    /* Estilos para pantallas pequeñas */
+    h1 {
+        font-size: 1.5em;
+    }
+  
+    .titulo {
+      margin-bottom: 250px;
+    }
+  
+  }
+  
+  @media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Estilos para pantallas medianas */
+    h1 {
+        font-size: 1.8em;
+    } 
+  }
+  
+  @media screen and (min-width: 1025px) {
+    /* Estilos para pantallas grandes */
+    h1 {
+        font-size: 2em;
+    }
+  }
+
+@media screen and (max-width: 1000px) {
+    .contenedor_educacion {
+        flex-direction: column;
+    }
+
+    .educacion {
+        max-width: 100%;
+    }
+
+    .proyecto {
+        flex-direction: column;
+    }
+
+    #proyecto2 {
+        flex-direction: column-reverse;
+    }
+
+    .info_pro {
+        width: 100%;
+    }
+
+        
+    .contenedor_slider, .foto_proyecto {
+        width: 500px;
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    .contenedor_slider, .foto_proyecto {
+        width: 400px;
+        height: 200px;
+    }
+
+    .educacion {
+        width: 300px;
+    }
+
+    footer .texto_info{
+        font-size: 0.7rem;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    
+    .contenedor_slider, .foto_proyecto {
+        max-width: 300px;
+        
+    }
+
+}
+
+@media screen and (max-width: 1500px)  {
+    
+    .contenedor_slider, .foto_proyecto {
+        width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 1200px)  {
+    
+    .contenedor_slider, .foto_proyecto {
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 850px)  {
+    
+    nav ul li {
+        margin: 20px 10px;
+      }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    .contenedor_slider, .foto_proyecto {
+        height: 250px;
+    }
+}
+
+
+@media screen and (max-width: 900px)  {
+    
+    nav ul li {
+        margin: 20px 10px;
+      }
+}
+
+@media only screen and (max-width: 600px) {
+  .flowers {
+        font-size: 14px;
+        letter-spacing: 3px;
+        transform: scale(1.0);
+  }
+
+  .contenedor_contacto {
+    width: 300px;
+
+  }
+  
+  }
+
+@media screen and (max-width: 600px) {
+    
+    .about_me {
+        flex-direction: column;
+    }
+
+    .foto_personal {
+        height: 150px;
+        
+    }
+
+    .hobbies_text {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+      }
+
+    nav ul li a {
+        font-size: 0.7rem;
+    }
+}

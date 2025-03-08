@@ -1,0 +1,266 @@
+/* Este css es para darle diseño a los modulos especificos del portafolio (about me, hobbies, contacto, etc) */
+
+.extra {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+nav {
+    background:  rgb(174, 215, 237);
+    padding: 10px;
+    height: 70px;
+}
+  
+  nav ul {
+    list-style: none; /* Quita los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Coloca los elementos en línea */
+    justify-content: center;
+    align-content: space-between;
+  }
+  
+  nav ul li {
+    margin: 20px 50px;
+  }
+  
+  nav ul li a {
+    text-decoration: none; /* Quita el subrayado */
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 700;
+    padding: 10px;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #ffffff; /* Cambia de color al pasar el mouse */
+  }
+
+  .titulos {
+    font-family: "Arial Narrow", Arial, sans-serif;
+    color: rgb(63, 29, 0);
+    font-weight: 900;
+    letter-spacing: 6px;
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px 0 10px 0;
+
+  }
+
+.foto_personal {
+    height: 250px;
+    border-radius: 50%;
+    margin: 0 8%;
+    
+}
+
+.about_me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section {
+        padding: 0 10%;
+}
+
+.texto_info {
+    text-align: justify;
+    font-family: 'Courier New';
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+.contenedor_educacion {
+  display: flex;
+}
+
+.educacion {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin: 0 15px;
+}
+
+h3 {
+  font-size: 1.5rem !important;
+}
+h6 {
+  font-size: 1.3rem !important;
+}
+
+.sombras {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.columna {
+  background-color: rgb(215, 237, 237);
+  padding: 20px 15px;
+  border: 1px solid var(--bg-black-100);
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  padding-left: 30px;
+}
+
+.educacion_sec {
+  padding: 20px 20px 0px 30px;
+  min-height: 130px;
+  border-left: 4px solid;
+  border-color: rgb(23, 90, 156);
+} 
+i {
+  color: rgb(23, 90, 156);
+}
+
+.foto_proyecto {
+  width: 600px;
+  border-radius: 15px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.contenedor_slider {
+  width: 600px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider, .slider2, .slider3 {
+  width: 300%;
+  height: 100%;
+  display: flex;
+}
+
+.imagen, .imagen2, .imagen3, .imagen4 {
+  width: 33.34%;
+  height: 100%;
+}
+
+.btn_izq, .btn_der, .btn_izq2, .btn_der2, .btn_izq3, .btn_der3 {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 5px;
+  font-weight: 600; 
+  cursor: pointer;
+  color:rgb(23, 90, 225);
+  transform: translate(0, -50%);
+  transition: .5s ease;
+  user-select: none ;
+}
+
+.btn_izq:hover, .btn_der:hover, .btn_izq2:hover, .btn_der2:hover, .btn_izq3:hover, .btn_der3:hover { 
+  background-color: #1b287bd4;
+  color: white;
+}
+
+
+.btn_der, .btn_der2, .btn_der3 {
+  right: 10px;
+}
+
+.btn_izq, .btn_izq2, .btn_izq3 {
+  left: 10px;
+}
+.proyecto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.info_pro {
+  width: 50%;
+  padding: 30px;
+}
+ul {
+  padding: 0 30px;
+}
+
+.hobbies {
+  margin: 20px 0;
+}
+
+.icono {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 30px;
+}
+
+.hobbies_text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background:  rgb(174, 215, 237);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+form {
+  background: #E3F2FD; /* Azul claro */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #90CAF9; /* Azul más oscuro */
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #42A5F5; /* Efecto de foco */
+  box-shadow: 0px 0px 5px rgba(66, 165, 245, 0.5);
+}
+
+.btn {
+  background: #42A5F5;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #1E88E5;
+}
+
+.contenedor_contacto {
+  width: 400px;
+  padding: 20px 0 40px 0;
+}
+
+.contacto_info {
+  padding: 30px 0 30px 40px;
+}
